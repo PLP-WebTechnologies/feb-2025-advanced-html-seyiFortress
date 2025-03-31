@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advanced HTML5 Elements and Forms</title>
+</head>
+<body>
+    <ol type="I">
+        <li>Citrus fruits</li>
+        <li>Cereals</li>
+        <li>Vegetables</li>
+        <li>Legumes</li>
+    </ol> <!-- Ordered list with Roman numerals -->
+
+    <img src="https://images.pexels.com/photos/15606904/pexels-photo-15606904/free-photo-of-a-woman-in-a-yellow-dress-is-standing-in-a-field.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="A woman in a yellow dress is standing in a field" width="300" height="auto"> <!-- Image with alt text and dimensions -->
+
+    <table border="1" cellpadding="10" cellspacing="0" style="border-collapse: collapse; width: 100%; margin-top: 20px;">
+        <caption style="font-size: 1.5em; margin: 10px 0;">Contact Information</caption>
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Address</th>
+                <th>Mobile</th>
+                <th>Email</th>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Romeo</td>
+                <td>123 Main St</td>
+                <td>+1234567890</td>
+                <td>romeo@example.com</td>
+            </tr>
+            <tr>
+                <td>Juliet</td>
+                <td>456 Elm St</td>
+                <td>+9876543210</td>
+                <td>juliet@example.com</td>
+            </tr>
+            <tr>
+                <td>Mark</td>
+                <td>789 Oak St</td>
+                <td>+1122334455</td>
+                <td>mark@example.com</td>
+            </tr>
+            <tr>
+                <td>Lucy</td>
+                <td>321 Pine St</td>
+                <td>+5566778899</td>
+                <td>lucy@example.com</td>
+            </tr>
+            <tr>
+                <td>Anna</td>
+                <td>654 Maple St</td>
+                <td>+9988776655</td>
+                <td>anna@example.com</td>
+            </tr>
+        </tbody>
+    </table> <!-- Table with header and body -->
+
+    <form action="https://example.com/submit" method="POST" style="margin-top: 20px;">
+        <fieldset style="border: 1px solid #ccc; padding: 20px; width: 300px;">
+            <legend style="font-weight: bold;">Registration Form</legend>
+            <!-- Text input for Name -->
+            <label for="name">Name:</label><br>
+            <input type="text" id="name" name="name" required><br><br>
+            
+            <!-- Email input for Email -->
+            <label for="email">Email:</label><br>
+            <input type="email" id="email" name="email" required><br><br>
+            
+            <!-- Password input for Password -->
+            <label for="password">Password:</label><br>
+            <input type="password" id="password" name="password" required><br><br>
+            
+            <!-- Date input for Birthdays -->
+            <label for="date">Birthday</label>
+            <input type="date" id="date" name="date"><br><br>
+            
+            <!-- Dropdown List of Nationality -->
+            <label for="nationality">Nationality</label>
+            <select id="nationality" name="nationality" required>
+                <option disabled selected>Select your nationality</option>
+                <option value="american">American</option>
+                <option value="british">British</option>
+                <option value="canadian">Canadian</option>
+                <option value="nigerian">Nigerian</option>
+                <option value="indian">Indian</option>
+                <option value="australian">Australian</option>
+                <option value="chinese">Chinese</option>
+                <option value="german">German</option>
+                <option value="french">French</option>
+                <option value="japanese">Japanese</option>
+            </select><br><br>
+            
+            <!-- Radio for Gender -->
+            <label for="male">Gender:</label>
+            <br>
+            <input type="radio" id="male" name="gender" value="male" required>
+            <label for="male">Male</label><br>
+            <input type="radio" id="female" name="gender" value="female" required>
+            <label for="female">Female</label><br>
+            <input type="radio" id="other" name="gender" value="other" required>
+            <label for="other">Other</label><br><br>
+
+            <!-- Checklist for Hobbies -->
+            <label for="hobbies">Hobbies:</label><br>
+            <input type="checkbox" id="reading" name="hobbies" value="reading">
+            <label for="reading">Reading</label><br>
+            <input type="checkbox" id="traveling" name="hobbies" value="traveling">
+            <label for="traveling">Traveling</label><br>
+            <input type="checkbox" id="sports" name="hobbies" value="sports">
+            <label for="sports">Sports</label><br>
+            <input type="checkbox" id="music" name="hobbies" value="music">
+            <label for="music">Music</label><br><br>
+
+            <!-- Submit Form -->
+            <input type="submit" value="Submit">
+        </fieldset>
+    </form>
+</body>
+</html>
